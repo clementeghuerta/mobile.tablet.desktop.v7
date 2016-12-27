@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Clemente's portfolio</title>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89428220-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+          <style>
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 90%;
+                margin: auto;
+                border-radius: 25px;
+            }
+          </style>
+          <script>
+          $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();   
+          });
+          </script>
+          <script>
+          $(document).ready(function(){
+            // Add scrollspy to <body>
+            $('body').scrollspy({target: ".arrow", offset: 50});   
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#arrow a").on('click', function(event) {
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+             
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              }  // End if
+            });
+          });
+          </script>
+</head>
+
+
+
+
+<body>
+
+  <div class="home">
+  <img class="icon col-xs-1 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-1"  src="images/icon.png"/>
+  <a href="index.html" class="clemente col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xs-pull-1">CLEMENTE</a>
+  </div><br>
+  <br>
+  <h3 class="welcome col-xs-offset-2 col-md-offset-2 col-lg-offset-2 col-sm-offset-2">Welcome <img src="images/emoji.png"></h3><p class="me col-xs-offset-2 col-md-offset-2 col-lg-offset-2 col-sm-offset-2">I am a Visual Designer based in the Silicon Valley.</p>
+
+  <div class="left-text">
+  <a href="mailto:chat@clementeghuerta.com" target="_top" class="">Email me</a>
+  </div>
+  <div class="left-text2">Clemente Garcia-Huerta</div>
+
+
+
+
+
+
+
+  <div class="container col-xs-offset-2 col-sm-offset-2 col-sm-10 col-xs-10 col-md-10 col-lg-10 center-block">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/news-display-1.png" alt="Chania" width="460" height="345">
+        </div>
+        <div class="item">
+          <img src="images/beershop-display.png" alt="Chania" width="460" height="345">
+        </div>
+        <div class="item">
+          <img src="images/data-display-3.png" alt="Flower" width="460" height="345">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--arrow-->
+  <div id="arrow">
+      <a href="#section1"><img class="arrow" src="images/arrow.png"></a>
+  </div>
+
+<section class="contains-1-all">
+  <!--Right side first text-->
+  <div id="section1" class="first-container-a center-block col-xs-10 col-sm-10 col-md-12 col-lg-12">
+  	     <div class="first-container-inside col-xs-12 col-sm-12 center-block">
+  	     <h1 class="about-heading col-lg-offset-1">Paper design</h1> 
+  		      <img class="col-xs-11 center-block col-sm-7 col-md-3 col-lg-3" src="images/app-display-1.png">
+            <p class="open-about padding-10 side-container col-xs-12 col-sm-4 col-md-3 col-lg-3">This project was designed to show-case my design process, which turned out to show that I rely on much of my previous design skills. In this case, my illustration skills are prevelant.I believe that the best way to captivate someone’s eye is through white space because it allows the user to focus on the information at hand, also creating a very valuable user experience.
+            </p>
+  		
+
+          <div class="right-right-side col-xs-12 -col-sm-7 col-md-5 col-lg-5">
+          	<h2 class="about-heading2">Objective + Process</h2>
+            <img class="center-block pull-left" src="images/calendar-display-1.png"><br>
+            <p class="padding-10"><strong>Objective:</strong> Create paper styled user Interfaces<br>
+            <strong>Process:</strong> <strong>conceptualizing</strong>I brainstormed ideas, which might benefit my portfolio, leading towards data visualization. <strong>Research</strong>For this project I used Human Interface Guideline and wrote down many notes. <strong> Ideas</strong> I wrote many thought and then kept the best in order to solve a problem I set for myself, which was to cross analyze 2 companies information.<strong>flow </strong> I then wrote down the flow I would be designing, which I cam back to before finalizing for design. <strong>Style Tile + other things </strong> I then create a sort of brand to go by, which I kept throughout the design and kept to the same color scheme and text size indicated from HIG. I read about Lightning Design System and worked with that in mind as well.<strong>Sketching + grid </strong> Sketching was done after writing down the flow and the grid was created with a sketch, somewhat and then finalized in illustrator.<strong>Designing </strong>I wanted the design to have much white space and a great user experience, so I mad the design clean and easy to follow.<strong>Prototyping</strong>This is a step I am currently on.
+            </p>
+          </div>
+        </div>
+  </div>
+
+
+
+          
+  <!--end-->
+  <!--RIGHT ABOUT-->
+  <!--1111ABOUT SECTION-->
+ <div class="container3">
+    <!-- Trigger the modal with a button -->
+    <button type="button " class="more-a" data-toggle="modal" data-target="#myModal">more</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">more</h4>
+          </div>
+          <div class="modal-body">
+            <img class="first-image center-block" src="images/calendar-display-1.png">
+            <p>Objective: Create paper styled user Interfaces<br>
+            <strong>Process:</strong><strong> conceptualizing</strong> I brainstormed ideas, which might benefit my portfolio, leading towards data visualization.<strong> Research</strong>For this project I used Human Interface Guideline and wrote down many notes.<strong> Ideas</strong> I wrote many thought and then kept the best in order to solve a problem I set for myself, which was to cross analyze 2 companies information.<strong>flow </strong> I then wrote down the flow I would be designing, which I cam back to before finalizing for design.<strong>Style Tile + other things </strong> I then create a sort of brand to go by, which I kept throughout the design and kept to the same color scheme and text size indicated from HIG. I read about Lightning Design System and worked with that in mind as well. <strong> Sketching + grid </strong> Sketching was done after writing down the flow and the grid was created with a sketch, somewhat and then finalized in illustrator.<strong>Designing </strong>I wanted the design to have much white space and a great user experience, so I mad the design clean and easy to follow.<strong> Prototyping</strong> This is a step I am currently on.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--ABOUT SECTION END-->
+
+  <!--1111MORE SECTION START-->
+    <button type="button" class="about-a" data-toggle="modal" data-target="#myModal2">about</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">about</h4>
+          </div>
+          <div class="modal-body">
+
+            <p>Objective: Create paper styled user Interfaces<br>
+            <strong>Process</strong><br>
+            This project was designed to show-case my design process, which turned out to show that I rely on much of my previous design skills. In this case, my illustration skills are prevelant.I believe that the best way to captivate someone’s eye is through white space because it allows the user to focus on the information at hand, also creating a very valuable user experience.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+  <!--more section END-->
+</section>
+<section class="contains-2-all">
+  <!--Right side first text-->
+  <div id="" class="first-container-b center-block col-xs-10 col-sm-10 col-md-12 col-lg-12">
+         <div class="first-container-inside col-xs-12 col-sm-12 center-block">
+         <h1 class="about-heading col-lg-offset-1">E-commerce Shop</h1> 
+            <img class="col-xs-11 center-block col-sm-7 col-md-3 col-lg-3" src="images/beershop-display-1.png">
+            <p class="open-about side-container col-xs-12 col-sm-4 col-md-3 col-lg-3">This project started out in a very rough stage, which shows I can take and lead a project in a direction of concept to finshed product. The concepts startted with an e-commerce #dailyui email. For those who do not know what that is it is a daily forum that sends you ideas to create a user interface. As I started this project, I decided to create a one of a kind branding with beautiful colors and a great UX, which showed a path of purchase.
+            </p>
+      
+
+          <div class="right-right-side col-xs-12 -col-sm-7 col-md-5 col-lg-5">
+          <h2 class="about-heading2">Objective + Process</h2>
+            <img class="center-block pull-left col-xs-12 col-sm-12" src="images/beershop-display-2.png"><br>
+            <p class="padding-10"><strong>Objective:</strong>Design a clean flow for an e-commerce store<br>
+            <strong>Process:</strong><strong>Step 1:</strong> Write down what I wanted from the app.<strong>Step 2:</strong>Write each option for each page down in different sections, which then formed each individual page. <strong> Step 3:</strong>Sketch the user interface with the options I had written down and then finalizing each sketch. <strong>Step 4:</strong> Design with Adobe Illustrator and choosing the best colors, which showed the same branding across as well as a appealing design for beer. Step 5:Prototype with inVision. Step 6:Re-adjust the design. <strong> Step 7:</strong>Finalize all of the pages.</p>
+          </div>
+        </div>
+  </div>
+
+
+
+          
+  <!--end-->
+  <!--RIGHT ABOUT-->
+  <!--1111ABOUT SECTION-->
+  <div class="container3">
+    <!-- Trigger the modal with a button -->
+    <button type="button " class="more-b" data-toggle="modal" data-target="#myModal3">more</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal3" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">more</h4>
+          </div>
+          <div class="modal-body">
+            <img class="first-image center-block col-xs-12 col-sm-12" src="images/beershop-display-2.png">
+            <p><strong>Objective:</strong>Design a clean flow for an e-commerce store<br>
+            <strong>Process:</strong><strong>Step 1:</strong> Write down what I wanted from the app.<strong>Step 2:</strong>Write each option for each page down in different sections, which then formed each individual page. <strong> Step 3:</strong>Sketch the user interface with the options I had written down and then finalizing each sketch. <strong>Step 4:</strong> Design with Adobe Illustrator and choosing the best colors, which showed the same branding across as well as a appealing design for beer. Step 5:Prototype with inVision. Step 6:Re-adjust the design. <strong> Step 7:</strong>Finalize all of the pages.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--ABOUT SECTION END-->
+
+  <!--1111MORE SECTION START-->
+    <button type="button" class="about-a" data-toggle="modal" data-target="#myModal4">about</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal4" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">about</h4>
+          </div>
+          <div class="modal-body">
+
+            <p><strong>Objective:</strong> Create paper styled user Interfaces<br>
+            <strong>Process</strong><br>
+            This project was designed to show-case my design process, which turned out to show that I rely on much of my previous design skills. In this case, my illustration skills are prevelant.I believe that the best way to captivate someone’s eye is through white space because it allows the user to focus on the information at hand, also creating a very valuable user experience.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--more section END-->
+</section>
+<section class="contains-3-all">
+  <!--Right side first text-->
+  <div id="" class="first-container-c center-block col-xs-10 col-sm-10 col-md-12 col-lg-12">
+         <div class="first-container-inside col-xs-12 col-sm-12 center-block">
+         <h1 class="about-heading col-lg-offset-1">Responsive web design app + flow</h1> 
+            <img class="col-xs-11 center-block col-sm-7 col-md-3 col-lg-3" src="images/data-display-1.png">
+            <p class="open-about side-container col-xs-12 col-sm-4 col-md-3 col-lg-3">This project was designed to show-case my design process, which turned out to show that I rely on much of my previous design skills. In this case, my illustration skills are prevelant.I believe that the best way to captivate someone’s eye is through white space because it allows the user to focus on the information at hand, also creating a very valuable user experience.
+            </p>
+      
+
+          <div class="right-right-side col-xs-12 -col-sm-7 col-md-5 col-lg-5">
+          <h2 class="about-heading2">Objective + Process</h2>
+            <img class="center-block pull-left col-xs-12 col-sm-12" src="images/data-display-2.png"><br>
+            <p class="padding-10"><strong>Objective:</strong> Create paper styled user Interfaces<br>
+            <strong>Process:</strong> <strong>conceptualizing</strong> I brainstormed ideas, which might benefit my portfolio, leading towards data visualization. <strong>Research</strong> For this project I used Human Interface Guideline and wrote down many notes.<strong> Ideas</strong> I wrote many thought and then kept the best in order to solve a problem I set for myself, which was to cross analyze 2 companies information.<strong>flow</strong>I then wrote down the flow I would be designing, which I cam back to before finalizing for design. <strong> Style Tile + other things</strong> I then create a sort of brand to go by, which I kept throughout the design and kept to the same color scheme and text size indicated from HIG. I read about Lightning Design System and worked with that in mind as well. <strong>Sketching + grid Sketching</strong> was done after writing down the flow and the grid was created with a sketch, somewhat and then finalized in illustrator.<strong>Designing</strong> I wanted the design to have much white space and a great user experience, so I mad the design clean and easy to follow. <strong>Prototyping</strong> This is a step I am currently on.</p>
+          </div>
+        </div>
+  </div>
+
+
+
+          
+  <!--end-->
+  <!--RIGHT ABOUT-->
+  <!--1111ABOUT SECTION-->
+  <div class="container3">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="more-c" data-toggle="modal" data-target="#myModal5">more</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal5" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">more</h4>
+          </div>
+          <div class="modal-body">
+            <img class="first-image center-block" src="images/data-display-2.png">
+            <p><strong>Objective:</strong> Create paper styled user Interfaces<br>
+            <strong>Process:</strong><strong>conceptualizing</strong> I brainstormed ideas, which might benefit my portfolio, leading towards data visualization. <strong>Research</strong> For this project I used Human Interface Guideline and wrote down many notes.<strong>Ideas</strong> I wrote many thought and then kept the best in order to solve a problem I set for myself, which was to cross analyze 2 companies information.<storng>flow</storng>I then wrote down the flow I would be designing, which I cam back to before finalizing for design.<strong>Style Tile + other things</strong> I then create a sort of brand to go by, which I kept throughout the design and kept to the same color scheme and text size indicated from HIG. I read about Lightning Design System and worked with that in mind as well.<strong>Sketching + grid </strong>Sketching was done after writing down the flow and the grid was created with a sketch, somewhat and then finalized in illustrator.<strong>Designing</strong> I wanted the design to have much white space and a great user experience, so I mad the design clean and easy to follow.<strong>Prototyping</strong>This is a step I am currently on.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--ABOUT SECTION END-->
+
+  <!--1111MORE SECTION START-->
+    <button type="button" class="about-c" data-toggle="modal" data-target="#myModal6">about</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal6" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">about</h4>
+          </div>
+          <div class="modal-body">
+
+            <p>Objective: Create paper styled user Interfaces<br>
+            Process<br>
+            This project was designed to show-case my design process, which turned out to show that I rely on much of my previous design skills. In this case, my illustration skills are prevelant.I believe that the best way to captivate someone’s eye is through white space because it allows the user to focus on the information at hand, also creating a very valuable user experience.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--more section END-->
+</section>
+<section class="contains-4-all">
+  <!--Right side first text-->
+  <div id="" class="first-container-d center-block col-xs-10 col-sm-10 col-md-12 col-lg-12">
+         <div class="first-container-inside col-xs-12 col-sm-12 center-block">
+         <h1 class="about-heading col-lg-offset-1">Apple Infographics</h1> 
+            <img class="col-xs-11 center-block col-sm-7 col-md-3 col-lg-3" src="images/infographics-display-1.png">
+            <p class="open-about side-container col-xs-12 col-sm-4 col-md-3 col-lg-3">Infographics are very fun to create and take much time and research. I believe that the main goal I set out to accomplish was accomplished.After a few weeks of research for each infographics, I wrote down ideas and sketched out possible ways of solving that problem.I decided to use three different data formats, which I think were used well for the type of data being showed to the reader.Each project took more than a month to complete and all together the projects tookjust over 3 months.
+            </p>
+      
+
+          <div class="right-right-side col-xs-12 -col-sm-7 col-md-5 col-lg-5">
+          <h2 class="about-heading2">Objective + Process</h2>
+            <img class="center-block pull-left col-xs-12 col-sm-12" src="images/infographics-display-3.png"><br>
+            <p class="padding-10"><strong>Objective:</strong> Create clean and highly informative interfaces<br> <strong>Process:</strong><strong> concept and ideas:</strong> In this section of the process I conceptualized what I thought others like myself would like to learn about Apple. I had always wondered why their net worth is so high, so I thought to seek out why. <strong>Research:</strong> Research is alway a part of my design process and over the years I have gotten somewhat good at doing it. For this specific project, I mainly did stock related research and Apple tech specs reasearch also.<strong> Concept and layout of design:</strong> At this stage of the process, I sketched a couple of illustrations in thumnails 
+            then at a larger scale with side notes of what I thought needed more information.<strong>Final touches on Rough Draft Input from Others:</strong> I find myself, at times, a bit stuck on how to proceed with perfecting and symplifying my ideas to show information as clear as possible. For this project, I asked an art director to look at it and give me pointers.<strong>Final Clean-up: </strong>As for many designers, the last step in any design is to perfect everything, by which I mean make sure you are following the grid and branding across your design.</p>
+          </div>
+        </div>
+  </div>
+
+
+
+          
+  <!--end-->
+  <!--RIGHT ABOUT-->
+  <!--1111ABOUT SECTION-->
+  <div class="container3">
+    <!-- Trigger the modal with a button -->
+    <button type="button " class="more-d" data-toggle="modal" data-target="#myModal7">more</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal7" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">more</h4>
+          </div>
+          <div class="modal-body">
+            <img class="first-image center-block" src="images/infographics-display-3.png">
+            <p>Objective: Create paper styled user Interfaces<br>
+            <strong>Process:</strong><strong> conceptualizing</strong> I brainstormed ideas, which might benefit my portfolio, leading towards data visualization.<strong> Research </strong>For this project I used Human Interface Guideline and wrote down many notes.<strong>Ideas</strong> I wrote many thought and then kept the best in order to solve a problem I set for myself, which was to cross analyze 2 companies information.<strong>flow </strong> I then wrote down the flow I would be designing, which I cam back to before finalizing for design.<strong>Style Tile + other things </strong> I then create a sort of brand to go by, which I kept throughout the design and kept to the same color scheme and text size indicated from HIG. I read about Lightning Design System and worked with that in mind as well.<strong>Sketching + grid</strong> Sketching was done after writing down the flow and the grid was created with a sketch, somewhat and then finalized in illustrator.<strong>Designing</strong>I wanted the design to have much white space and a great user experience, so I mad the design clean and easy to follow.<strong>Prototyping </strong> This is a step I am currently on.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--ABOUT SECTION END-->
+
+  <!--1111MORE SECTION START-->
+    <button type="button" class="about-d" data-toggle="modal" data-target="#myModal7">about</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal7" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">about</h4>
+          </div>
+          <div class="modal-body">
+
+            <p>Objective: Create paper styled user Interfaces<br>
+            Process<br>
+            This project was designed to show-case my design process, which turned out to show that I rely on much of my previous design skills. In this case, my illustration skills are prevelant.I believe that the best way to captivate someone’s eye is through white space because it allows the user to focus on the information at hand, also creating a very valuable user experience.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--more section END-->
+</section>
+  
+  <!--MORE SECTION END-->
+      <a class="other" href="https://dribbble.com/clementeghuerta">Other work</a>
+  <div class="first-container-g center-block col-xs-10 col-sm-10 col-md-12 col-lg-12">
+      <p class="about2">I love UI design, visual design, and graphic design. Some of my greatest inspirations come from great User Interfaces like the one's seen from Facebook and Apple. I love creating infographics and clean designs.<br>
+
+      I am currently a graphic design student at California State East Bay studying graphic design and concentrating on UI Design. Before this, I attended Academy of Art University where I learned many different skills such as how to storyboard, edit video, and illustrate in 2D and 3D.<br>
+
+      I love designing mobile first, using wireframes, researching, using stylescapes, creating user paths, prototyping, and designing responsive web designs (RWD), coding with: HTML5, CSS, CSS3, JavaScript(jQuery), and using Zurb Foundation, Bootstrap, and WordPress. Also, I have a passion in creating application (app) designs, and I am currently studying Human Interface Guidelines (GUI), Material Design and Lightning Design System.<br>
+
+      Lastly, I have great visual, written, and verbal communication skills. I am very detail-oriented, resourceful, and well-organized. And I work great in self-direction and am also a great team player. And, I have a great love for typography.
+      </p>
+  </div>
+
+  <div class="icons center-block">
+      <a class=" " href="https://www.facebook.com/clementeghuerta1" target="_blank">
+      <img class="" src="images/facebook.png">
+      </a>
+      <a class="github" href="https://github.com/clementeghuerta" target="_blank">
+      <img class=" " src="images/github.png">
+      </a>
+      <a class="dribbble" href="https://dribbble.com/clementeghuerta" target="_blank">
+      <img class=" " src="images/dribbble.png">
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/clementeghuerta" target="_blank">
+      <img class=" " src="images/linkedin.png">
+      </a>
+  </div>
+
+  <footer class="center-block col-xs-10 col-sm-10 col-md-12 col-lg-12">
+    
+    <strong class="copy center-block ">Fully responsive design by Clemente Garcia-Huerta &copy; 2016</strong>
+
+  </footer>
+</body>
+</html>
